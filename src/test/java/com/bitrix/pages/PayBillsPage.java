@@ -1,4 +1,4 @@
 package com.bitrix.pages;
 
-public class PayBillsPage {
+public class PayBillsPage extends BasePage {
 }

@@ -1,4 +1,4 @@
-@login
+@login1
 Feature: Users should be able to login
 
   Background:
@@ -9,6 +9,10 @@ Feature: Users should be able to login
 
     When the user logs in using "username" and "password"
     Then the user should be able to login
+    And the Account Activity page should be displayed
+
+
+
 
 
 

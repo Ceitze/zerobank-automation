@@ -18,12 +18,40 @@ public abstract class  BasePage {
     @FindBy(xpath = "//ul[@class='nav nav-tabs']/li")
     public List<WebElement> menuOptions;
 
+    ////a[@class='dropdown-toggle'])[contains(text(),'Zion Schaefer')]
+    @FindBy(xpath = "//input[@id='searchTerm']")
+    public  WebElement searchButton;
+
+    @FindBy(xpath = "//a[contains(text(),'Account Summary')]")
+    public  WebElement accountSummary;
+
+    @FindBy(xpath = "//a[contains(text(),'Account Activity')]")
+    public  WebElement accountActivity;
+
+    @FindBy(xpath = "//a[contains(text(),'Transfer Funds')]")
+    public  WebElement transferFunds;
+
+    @FindBy(xpath = "//a[contains(text(),'Pay Bills')]")
+    public  WebElement payBiils;
+
+    @FindBy(xpath = "//a[contains(text(),'My Money Map')]")
+    public  WebElement myMoneyMap;
+
+    @FindBy(xpath = "//a[contains(text(),'Online Statements')]")
+    public  WebElement onlineStatements;
+
+    @FindBy(xpath = "//i[@class='icon-cog']")
+    public WebElement settingsIcon;
+
     @FindBy(css = "//a[contains(text(),'Account Summary')]")
     @CacheLookup
     protected WebElement loaderMask;
 
     @FindBy(css = "//h2[contains(text(),'Cash Accounts')]")
     public WebElement pageSubTitle;
+
+    @FindBy(xpath = "//a[@class='brand']")
+    public WebElement ZeroBank;
 
     @FindBy(xpath = "//body/div[@class='wrapper']/div[@class='navbar navbar-fixed-top']/div[@class='navbar-inner']/div[@class='container']/div[@id='settingsBox']/ul[@class='nav float-right']/li[3]/a[1]")
     public WebElement userName;

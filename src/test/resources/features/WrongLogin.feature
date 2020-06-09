@@ -1,4 +1,4 @@
-@login
+@wronglogin
 Feature: Users should be able to login
 
   Background:
@@ -7,8 +7,8 @@ Feature: Users should be able to login
 
   Scenario: Login as a driver
 
-    When the user logs in using "username" and "password"
-    Then the user should be able to login
+    When the user logs in using "username" and "password1"
+    Then the user should be able to not login
 
 
 

@@ -1,3 +1,4 @@
+@PurchaseForeign
 Feature: Purchase Foreign Currency
 
 

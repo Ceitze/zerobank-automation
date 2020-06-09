@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-    public class LoginPage {
+    public class LoginPage extends BasePage {
 
         public LoginPage(){
             PageFactory.initElements(Driver.get(), this);
@@ -22,6 +22,8 @@ import org.openqa.selenium.support.PageFactory;
         @FindBy(name = "submit")
         public WebElement submit;
 
+        @FindBy(xpath = "//div[@class='alert alert-error']")
+        static WebElement WrongPasswordDisplayed;
 
         public void login(String userNameStr, String passwordStr) {
             userName.sendKeys(userNameStr);

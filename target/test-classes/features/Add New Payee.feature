@@ -1,3 +1,4 @@
+@AddNewPayee
 Feature: Add new payee under pay bills
 
 

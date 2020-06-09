@@ -7,7 +7,7 @@ Feature: Users should be able to login
 
   Scenario: Login as a driver
 
-    When the user enter the driver information
+    When the user logs in using "username" and "password"
     Then the user should be able to login
 
 
